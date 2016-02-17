@@ -2,7 +2,8 @@
 
 <!-- Container  -->
 <div class="container">
-	<h1>New Design on it's way.</h1>
+	<h1><?php the_title(); ?></h1>
+	<?php the_content(); ?>
 </div>
 <!-- Container end  -->
 
