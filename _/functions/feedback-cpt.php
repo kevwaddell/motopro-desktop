@@ -23,25 +23,20 @@ function register_cpt_mp_feedback_cpt() {
         'labels' => $labels,
         'hierarchical' => false,
         'description' => 'MotoPro Client Feedback CPT.',
-        'supports' => array( 'title', 'editor' ),
+        'supports' => array( 'editor' ),
         
-        'public' => true,
+        'public' => false,
         'show_ui' => true,
         'show_in_menu' => true,
         'menu_position' => 5,
         'menu_icon' => 'dashicons-editor-quote',
         'show_in_nav_menus' => false,
-        'publicly_queryable' => true,
+        'publicly_queryable' => false,
         'exclude_from_search' => true,
-        'has_archive' => true,
+        'has_archive' => false,
         'query_var' => true,
         'can_export' => true,
-        'rewrite' => array( 
-            'slug' => 'feedback', 
-            'with_front' => false,
-            'feeds' => false,
-            'pages' => true
-        ),
+        'rewrite' => false,
         'capability_type' => 'post'
     );
 

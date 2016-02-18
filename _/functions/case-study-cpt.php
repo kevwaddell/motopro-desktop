@@ -23,25 +23,19 @@ function register_cpt_mp_case_study_cpt() {
         'labels' => $labels,
         'hierarchical' => false,
         'description' => 'MotoPro Case study CPT.',
-        'supports' => array( 'title', 'editor' ),
-        
-        'public' => true,
+        'supports' => array( 'editor' ),
+        'public' => false,
         'show_ui' => true,
         'show_in_menu' => true,
         'menu_position' => 5,
         'menu_icon' => 'dashicons-id',
         'show_in_nav_menus' => false,
-        'publicly_queryable' => true,
-        'exclude_from_search' => false,
-        'has_archive' => true,
+        'publicly_queryable' => false,
+        'exclude_from_search' => true,
+        'has_archive' => false,
         'query_var' => 'case-study',
         'can_export' => true,
-        'rewrite' => array( 
-            'slug' => 'case-studies', 
-            'with_front' => false,
-            'feeds' => false,
-            'pages' => true
-        ),
+        'rewrite' => false,
         'capability_type' => 'post'
     );
 

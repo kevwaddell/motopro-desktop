@@ -3,10 +3,7 @@
 			<!-- MAIN CONTENT END -->
 		
 			<!-- FOOTER START -->
-			<div class="footer-info">
-			
-				
-			</div>
+			<?php include (STYLESHEETPATH . '/_/inc/global/footer-info.inc');  ?>
 		
 		</div>
 		<!-- wrapper end -->

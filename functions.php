@@ -14,7 +14,7 @@ wp_enqueue_script( 'mp-functions', get_stylesheet_directory_uri() . '/_/js/scrip
 add_action('wp_enqueue_scripts', 'motopro_scripts');
 
 /*  PACKAGE OPTIONS CPT */
-include (STYLESHEETPATH . '/_/functions/package-options-cpt.php');
+//include (STYLESHEETPATH . '/_/functions/package-options-cpt.php');
 
 /*  FAQ CPT */
 include (STYLESHEETPATH . '/_/functions/faq-cpt.php');
