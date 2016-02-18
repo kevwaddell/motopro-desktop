@@ -3,7 +3,7 @@ $contact_email = get_field('contact_email', 'options');
 $contact_page = get_page_by_path('contact-us');
 //echo '<pre class="debug">';print_r($contact_page);echo '</pre>';
 ?>
-<nav id="main-nav" class="nav-open">
+<nav id="main-nav" class="nav-closed">
 	
 	<div class="container">
 		<div class="nav-top-bar">
