@@ -1,0 +1,185 @@
+#main-nav {
+	.fixed;
+	width: 100%;
+	height: 100%;
+	.pad-bot(6.3);
+	.left(0);
+	.trans-bg(@black; 0.9);
+	.animated;
+	
+	.container {
+	.bg-img('lg-half-icon.png');
+	.bg-repeat(no-repeat);
+	background-position: center bottom;
+	.bg-size(contain);	
+	height: 100%;
+	}
+	
+	&.nav-closed {
+	top: -100%;
+	.opacity(0);	
+	}
+	
+	&.nav-open {
+	.top(0);
+	.opacity(1);	
+	}
+	
+	.nav-top-bar {
+	.pad(3;0;3;0);	
+	}
+	
+	.nav-bar-links {
+		li {
+		.fleft;	
+		.mag-right(1);
+		}
+		
+		a {
+		text-align: center;
+		.block;
+		.w(5);
+		.h(5);
+		.col(@white);	
+		.border(@white; 0.1);
+		.no-text-dec;
+			i {
+			.font-size(2);
+			.line-h(4.8);
+			}
+		}
+	}// .nav-bar-links
+	
+	#close-nav {
+	.bg-col(@trans);	
+	.no-rounded;
+	.border(@white; 0.1);
+	.col(@white);
+	.fright;
+	.pad-all(0);
+	.w(5);
+	.h(5);
+		i {
+		.font-size(2);
+		}
+	}//#close-nav
+	
+	.nav-wrapper {
+	.rel;
+		
+		li.top-level {
+		width: 50%;	
+		text-align: center;
+		.mag-bot(2);
+		.pad-right(3);
+		//.rel;
+		
+			ul.sub-menu {
+			.none;	
+			.opacity(0);
+			}
+			
+			&.show-sub-nav {
+							
+				ul.sub-menu  {
+				.block;	
+				.opacity(1);	
+				}
+			}
+			
+		}//li.top-level	
+		
+		a {
+		.block;
+		.h(7);
+		.line-h(7);	
+		.caps;
+		.col(@white);
+		.border(@white; 0.1);
+		.no-text-dec;
+		.rel;
+		.font-size(2.2);
+		.font-slab-reg;
+		
+			i {
+			.abs;
+			.left(1);
+			.top(0.9);
+			.w(5);
+			.h(5);
+			.line-h(5);
+			.font-size(2);	
+			.border(@white; 0.1);
+			.rounded(100%);
+			}
+			
+			&:hover, &:active, &:focus {
+			.bg-col(@white);
+			.col(@black);
+				i {
+				.border-col(@black);	
+				}
+			}
+			
+			&.active {
+			.bg-col(@white);
+			.col(@black);
+				&:after {
+				content: "\f101";	
+				font-family: FontAwesome;	
+				.abs;
+				.right(0);
+				.top(0);
+				.line-h(7);
+				.pad-right(1);
+				.font-size(2); 		
+				}	
+				
+				i {
+				.border-col(@black);	
+				}
+			}
+		}// a
+		
+		ul.sub-menu {
+		.abs;
+		.top(0);
+		left: 50%;
+		width: 50%;
+		.border(@white; 0.1);
+		border-bottom: none;
+		.list-style-gone;
+		.transition(0.4s, ease-in);
+		
+			li {
+			width: 100%;
+			.mag-bot(0);	
+			.pad-right(0);
+			}
+			
+			a {
+			.no-border;	
+			.border-bot(@white, 0.1);
+			.line-h(1);
+			height: auto;
+			.pad(1.5;1;1.5;1);	
+			.font-size(1.6);
+			.rel;
+				&:hover, &:active, &:focus {
+					&:after {
+					content: "\f101";	
+					font-family: FontAwesome;	
+					.abs;
+					.right(0);
+					.top(0);
+					.line-h(4);
+					.pad-right(1);
+					.font-size(2); 	
+					}
+				}
+			}
+		}//ul.sub-menu
+		
+	}// .nav-wrapper
+	
+}//#main-nav

@@ -6,6 +6,7 @@ wp_enqueue_style('mp-select-styles', 'https://cdnjs.cloudflare.com/ajax/libs/boo
 wp_enqueue_style('mp-styles', get_stylesheet_directory_uri().'/_/css/styles.css', null, filemtime( get_stylesheet_directory_uri().'/_/css/styles.css'), 'screen' );
 wp_enqueue_style('mp-print-styles', get_stylesheet_directory_uri().'/_/css/print-styles.css', null, filemtime( get_stylesheet_directory_uri().'/_/css/print-styles.css'), 'print' );
 //Scripts
+wp_enqueue_script('mp-jquery-easing', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js', array('jquery'), '1.3', true);
 wp_enqueue_script('mp-slim-scroll', 'https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.7/jquery.slimscroll.min.js', array('jquery'), '1.3.7', true);
 wp_enqueue_script('mp-bootstrap-select', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.4/js/bootstrap-select.min.js', array('jquery', 'bootstrap-all-min'), '1.9.4', true);
 wp_enqueue_script( 'mp-functions', get_stylesheet_directory_uri() . '/_/js/scripts.js', array('jquery', 'bootstrap-all-min', 'mp-bootstrap-select','mp-slim-scroll'), '1.0.0', true );
@@ -62,9 +63,7 @@ $login_sb_args = array(
 
 register_sidebar( $login_sb_args );
 
-
 add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
-
 
 function the_title_trim($title) {
 	$title = attribute_escape($title);
@@ -101,5 +100,26 @@ add_action("gform_field_css_class", "custom_class", 10, 3);
 
 if(function_exists('acf_add_options_page')) { 
 	acf_add_options_page();
+}
+
+/*
+GLOBAL PARTS INCLUDES
+These are function to get regularly used template parts
+*/
+
+function main_nav() {
+	include (STYLESHEETPATH . '/_/inc/global/main-nav.inc');
+}
+
+function col_strip() {
+	include (STYLESHEETPATH . '/_/inc/global/col-strip.inc');
+}
+
+function head_html() {
+	include (STYLESHEETPATH . '/_/inc/global/head-html.inc');
+}
+
+function footer_info() {
+	include (STYLESHEETPATH . '/_/inc/global/footer-info.inc');
 }
  ?>

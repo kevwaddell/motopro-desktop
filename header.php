@@ -1,4 +1,4 @@
-<?php include (STYLESHEETPATH . '/_/inc/global/head-html.inc');  ?>
+<?php head_html();  ?>
 
 <body <?php body_class(); ?>>
 <?php if ($_SERVER['SERVER_NAME']=='www.motoprolegal.co.uk') { 
@@ -11,7 +11,7 @@ $google_code_active = get_field('google_code_active', 'options');
 	<?php } ?>
 <?php } ?>
 
-<?php include (STYLESHEETPATH . '/_/inc/global/main-nav.inc');  ?>
+<?php main_nav();  ?>
 
 <div class="mp-wrapper">
 

@@ -35,6 +35,23 @@ font-stretch: normal;
 -moz-osx-font-smoothing: subpixel-antialiased;
 }
 
+.font-slab-bold {
+font-family: @slab-font-bold;
+font-weight: normal; 
+font-stretch: normal;	
+-webkit-font-smoothing: subpixel-antialiased;
+-moz-osx-font-smoothing: subpixel-antialiased;
+}
+
+.font-slab-reg {
+font-family: @slab-font-reg;
+font-weight: normal; 
+font-stretch: normal;	
+letter-spacing: 1px;
+-webkit-font-smoothing: subpixel-antialiased;
+-moz-osx-font-smoothing: subpixel-antialiased;
+}
+
 .line-h(@sizeValue){
 @pxValue: (@sizeValue * @baseSize);
 line-height: ~"@{pxValue}px"; 
