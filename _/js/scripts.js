@@ -8,6 +8,8 @@ jQuery(document).ready(function( $ ) {
 	
 	 $('body').on('click','button#main-nav-btn', function(e){
 		 
+		 $('body').addClass('nav-open');
+		 
 		$('#main-nav').animate({top: '0%', opacity: '1'}, 500, "easeInQuart", function(){
 			
 			console.log($(this));
@@ -40,6 +42,7 @@ jQuery(document).ready(function( $ ) {
 		$('#main-nav').animate({top: '-100%', opacity: '0'}, 500, "easeOutQuart", function(){
 			
 			$(this).removeClass('nav-open').addClass('nav-closed').removeAttr("style");
+			$('body').removeClass('nav-open');
 			
 		});
 
