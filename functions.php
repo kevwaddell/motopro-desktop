@@ -47,6 +47,11 @@ add_theme_support('html5', array('search-form'));
 register_nav_menus (
 	array(
 	  'social_links_menu' => 'Social Links',
+	  'footer_services' => 'Footer Services Links',
+	  'footer_company_info' => 'Footer Company Links',
+	  'footer_blog' => 'Footer Blog Links',
+	  'footer_motoring_offences' => 'Footer Motoring Offences Links',
+	  'footer_legal_links' => 'Footer Legal Links'
 	)
 );
 	
