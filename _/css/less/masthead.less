@@ -1,0 +1,196 @@
+.main-masthead {
+	.btn {
+	.bg-col(@trans);
+	.no-rounded;	
+	.pad(0; 2; 0; 2);
+	.h(5);
+	.font-size(1.8);
+	.line-h(5);
+	.font-slab-reg;
+		
+		&.with-icon {
+		.pad(0; 1.5; 0; 1.5);
+			i {
+			.fleft;
+			.block;
+			.w(3);
+			.h(3);	
+			.rounded(100%);
+			.mag-right(1);	
+			.mag-top(1);
+			.line-h(2.8);
+			text-align: center;
+			}
+		}
+	}
+	
+	ul#menu-social-links-menu {
+		
+		li {
+		.fleft;
+			i {
+			.line-h(5);	
+			}
+		}
+		
+		a {
+		.no-text-dec;
+			i {
+			.font-size(2);	
+			}
+			span {
+			.none;	
+			}	
+		}
+	}	
+}
+
+#masthead {
+	
+	.top-bar {
+		a.contact-link {
+		.line-h(5);	
+		.col(@red);
+		.no-text-dec;
+			&.tel-link {
+			.font-size(2.5);	
+			}
+			&.email-link {
+			.font-size(2);	
+			}
+			
+			i {
+			.block;
+			.fleft;
+			.w(3);
+			.h(3);
+			.border(@grey; 0.1);
+			.rounded(100%);
+			.mag-right(1);
+			.mag-top(1);
+			.col(@grey);	
+			.font-size(1.5);
+			.line-h(2.8);
+			text-align: center;
+			}
+			
+			&:hover, &:active, &:focus {
+			.col(@grey);
+				i {
+				.col(@red);	
+				}
+			}
+		}
+	}
+	
+	ul#menu-social-links-menu {
+	.mag-bot(0);
+		
+		li {
+		.mag-left(1);
+		}
+		
+		a {
+		.col(@grey);
+			&:hover, &:active, &:focus {
+			.col(@red);
+			}	
+		}
+	
+	}
+	
+	.logo-bar {
+	.bg-col(@white);
+	.pad(0;0;1;0);	
+	.drop-shadow(0, 0, 10px, 0.7);
+		.col-strip {
+		.mag-bot(1);	
+		}	
+	}
+	
+	a#tlw-masthead-logo {
+	.block;
+	.h(10);	
+	.bg-img("masthead-logo.png");
+	.bg-repeat(no-repeat);
+	background-position: left top;
+	.bg-size(contain);
+		&:hover, &:active, &:focus {
+		.opacity(0.5);
+		}
+	}
+	
+	.btn {
+	.no-border;
+	.bg-col(@red);
+	.col(@white);	
+	.mag-top(2.5);
+	.mag-left(3);
+		
+		&.with-icon i {
+		.border(@white; 0.1);
+		}
+		
+		&:hover, &:active, &:focus {
+		.bg-col(@black);
+		}
+		
+		
+	}
+	
+	#main-nav-btn {
+	.bg-col(@trans);
+	.border(@black; 0.1);
+	.col(@black);
+		&:hover, &:active, &:focus {
+		.bg-col(@black);
+		.col(@white);
+		}
+	}
+
+}
+
+#hp-masthead {
+.abs;
+.top(0);
+.left(0);
+width: 100%;
+.pad(3; 0; 3; 0);	
+
+	.btn {
+	.border(@white; 0.1);
+	.col(@white);	
+	}
+
+	ul#menu-social-links-menu {
+		
+		li {
+		.mag-right(1);
+		}
+		
+		a {
+		.col(@white);	
+		}
+	
+	}
+}
+
+.breadcrumbs {
+.line-h(2);
+.pad(1;0;1;0);
+.bg-col(@grey);	
+	span.separator {
+	.pad(0;1;0;1);	
+	}
+	
+	a {
+	.col(@black);	
+	.no-text-dec;
+		&.current-item {
+		.bold;	
+		}
+		&:hover, &:active, &:focus {
+		.col(@white);
+		}
+	}
+}

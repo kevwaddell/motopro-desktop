@@ -106,6 +106,9 @@ if(function_exists('acf_add_options_page')) {
 GLOBAL PARTS INCLUDES
 These are function to get regularly used template parts
 */
+function masthead() {
+	include (STYLESHEETPATH . '/_/inc/global/masthead.inc');
+}
 
 function main_nav() {
 	include (STYLESHEETPATH . '/_/inc/global/main-nav.inc');
@@ -121,5 +124,20 @@ function head_html() {
 
 function footer_info() {
 	include (STYLESHEETPATH . '/_/inc/global/footer-info.inc');
+}
+
+function inc($file, $folder = "global") {
+	include (STYLESHEETPATH . '/_/inc/'.$folder.'/'.$file.'.inc');
+}
+function freephone_no($link = 0){
+	$number = get_field('freephone_num', 'options');
+	if ($link == 1) {
+		$number	= str_replace(" ", "", $number);
+	}
+	echo $number;
+}
+function contact_email(){
+	$email = get_field('contact_email', 'options');
+	echo $email;
 }
  ?>

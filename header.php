@@ -14,5 +14,7 @@ $google_code_active = get_field('google_code_active', 'options');
 <?php main_nav();  ?>
 
 <div class="mp-wrapper">
-
-	<div class="content">
+		
+	<?php masthead(); ?>	
+		
+	<main id="main-content">	

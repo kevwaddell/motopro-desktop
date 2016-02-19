@@ -6,6 +6,19 @@ jQuery(document).ready(function( $ ) {
 	Functions and actions for main navigation
 	*/
 	
+	 $('body').on('click','button#main-nav-btn', function(e){
+		 
+		$('#main-nav').animate({top: '0%', opacity: '1'}, 500, "easeInQuart", function(){
+			
+			console.log($(this));
+			
+			$(this).removeClass('nav-closed').addClass('nav-open').removeAttr("style");
+			
+		});
+				
+		return false;
+	});
+	
 	 $('body').on('click','li.top-level > a', function(e){
 		 
 		var parent = $(this).parent();
@@ -21,9 +34,12 @@ jQuery(document).ready(function( $ ) {
 	
 	 $('body').on('click','#close-nav', function(e){
 		 
-		$('#main-nav').animate({top: '-100%'}, { duration: 500, easing: "easeOutQuart"}, function(){
+		$('#menu-main-menu > li.top-level').not(parent).removeClass('show-sub-nav');
+		$('li.top-level > a').not(this).removeClass('active');
+		 
+		$('#main-nav').animate({top: '-100%', opacity: '0'}, 500, "easeOutQuart", function(){
 			
-			$(this).removeClass('nav-open').addClass('nav-closed');
+			$(this).removeClass('nav-open').addClass('nav-closed').removeAttr("style");
 			
 		});
 

@@ -1,6 +1,4 @@
-
-			</div>
-			<!-- MAIN CONTENT END -->
+			</main>
 		
 			<!-- FOOTER START -->
 			<?php footer_info();  ?>
