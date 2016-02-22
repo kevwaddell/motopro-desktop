@@ -6,4 +6,7 @@
 <!-- ABOUT COMPANY SECTION -->
 <?php inc('hp-about-section', 'front_page'); ?>
 
+<!-- LEGAL SERVICES SECTION -->
+<?php inc('legal-services', 'sections'); ?>
+
 <?php get_footer(); ?>
