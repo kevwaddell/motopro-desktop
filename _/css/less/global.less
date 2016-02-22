@@ -90,7 +90,6 @@ html.svg {
 .mp-wrapper {
 .rel;
 .min-w(117);
-min-height: 100%;
 .transition(0.3s, ease);
 }
 
@@ -99,7 +98,7 @@ min-height: 100%;
 }
 
 main#main-content {
-	.bg-col(@white);
+.bg-col(@white);
 }
 
 .col-strip {
@@ -122,6 +121,12 @@ main#main-content {
 	}
 }
 
-h1, h2, h3, p {
+h1, h2, h3 {
+.col(@greyDk);
+.font-size(5.5);
+.line-h(5);
+}
+
+p {
 .col(@black);
 }
