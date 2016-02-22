@@ -65,7 +65,7 @@ section#hp-top-section {
 	
 	.hp-logo {
 	.in-block;
-	.h(20);	
+	.h(19);	
 	.w(50.5);
 	.mag-top(2);
 	.bg-img("masthead-logo.png");
@@ -78,6 +78,9 @@ section#hp-top-section {
 	.pad-all(3);
 	.trans-bg(@white; 0.8);
 	.rounded(8px);
+		h1 {
+		.mag-bot(2);	
+		}
 		p {
 		.font-size(2);
 		.line-h(3);	
@@ -86,9 +89,126 @@ section#hp-top-section {
 		}
 	}
 	
+	.hp-top-col-links {
+	.abs;
+	.bottom(0.3);
+	.left(0);
+	.right (0);	
+		a {
+		.block;
+		.pad-all(2);
+		.col(@white);	
+		.caps;
+		.font-cond;
+		.font-size(4);
+		.line-h(3.8);
+		.no-text-dec;
+		.transition;
+		
+			&.link-green {
+			.bg-col(@green);
+				&:hover, &:active, &:focus {
+				.bg-col(@green80);
+				}	
+				i {
+				.bg-col(@green);	
+				}
+			}
+			&.link-blue {
+			.bg-col(@blue);	
+				&:hover, &:active, &:focus {
+				.bg-col(@blue80);
+				}	
+				i {
+				.bg-col(@blue);		
+				}
+			}
+			&.link-orange {
+			.bg-col(@orange);	
+				&:hover, &:active, &:focus {
+				.bg-col(@orange80);
+				}
+				i {
+				.bg-col(@orange);	
+				}
+			}
+			
+			&:hover, &:active, &:focus {
+				i {
+				.bounce;	
+				}
+			}
+		}
+		i {
+		.block;
+		margin: 0 auto 10px;
+		.w(7);
+		.h(7);
+		.rounded(100%);
+		.border(@white; 0.1);
+		.font-size(3);
+		.line-h(7);	
+		.animated;
+		}
+	}
 	
 }
 
 section#hp-about-section {
 .bg-col(@white);
+ .bg-img("lg-full-icon.png");
+.bg-repeat(no-repeat);
+background-position: center center;
+.bg-size(80%);
+.pad-top(5);
+.pad-bot(9);
+	
+	.about-entry {
+	.pad-bot(3);
+	}
+	
+	h2 {
+	.mag-top(0);	
+	.mag-bot(2);
+	}
+	p {
+	.font-size(2);	
+	.line-h(3);
+	.mag-bot(2);
+	}
+	
+	a.btn {
+	.pad-all(0);
+	.pad-left(6);
+	.no-border;
+	.bg-col(@black);
+	.col(@white);	
+	.h(7);
+	.line-h(7);
+	.no-rounded;
+	.font-size(2.8);
+		&.tel-num {
+		.font-size(3.6);	
+		}
+		
+		i {
+		.abs;
+		.left(1);
+		.top(0.9);
+		.w(5);
+		.h(5);
+		.line-h(5);
+		.font-size(2);	
+		.border(@white; 0.1);
+		.rounded(100%);	
+		}
+		
+		&:hover, &:active, &:focus {
+		.bg-col(@red);
+			i {
+			.col(@black);	
+			}
+		}
+	}
+
 }
