@@ -101,6 +101,24 @@ main#main-content {
 .bg-col(@white);
 }
 
+body.home main#main-content {
+.bg-col(@trans);		
+}
+
+.abs-top {
+.abs;
+.top(0);
+.left(0);
+.right(0);	
+}
+
+.abs-bot {
+.abs;
+.bottom(0);
+.left(0);
+.right(0);	
+}
+
 .col-strip {
 	.border-top(@white; 0.3);
 	.border-bot(@white; 0.3);
@@ -129,4 +147,9 @@ h1, h2, h3 {
 
 p {
 .col(@black);
+}
+
+.btn {
+.font-slab-reg;
+.rel;	
 }

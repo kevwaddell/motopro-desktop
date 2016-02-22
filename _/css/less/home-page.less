@@ -1,9 +1,94 @@
 section#hp-top-section {
 .h(90);	
 .pad-top(12);
-.bg-col(@grey50);
+.rel;
+
+	video#bgvid { 
+	.fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    .bg-img("video-poster-img.png");
+    .bg-repeat(no-repeat);
+    background-position: center center;
+    .bg-size;
+	}
+	
+	.hp-top-intro {
+	.abs;
+	.top(12);
+	.left(0);
+	width: 100%;
+	}
+	
+	a.btn {
+	.pad-all(0);
+	.pad-left(6);
+	.no-border;
+	.bg-col(@red);
+	.col(@white);	
+	.h(7);
+	.line-h(7);
+	.no-rounded;
+	.font-size(2.8);
+		&.tel-num {
+		.font-size(3.6);	
+		}
+		
+		i {
+		.abs;
+		.left(1);
+		.top(0.9);
+		.w(5);
+		.h(5);
+		.line-h(5);
+		.font-size(2);	
+		.border(@white; 0.1);
+		.rounded(100%);	
+		}
+		
+		&:hover, &:active, &:focus {
+		.bg-col(@black);
+			i {
+			.col(@red);	
+			}
+		}
+	}
+	
+	.hp-logo {
+	.in-block;
+	.h(20);	
+	.w(50.5);
+	.mag-top(2);
+	.bg-img("masthead-logo.png");
+	background-position: center center;
+	.bg-repeat(no-repeat);
+    .bg-size(contain);
+	}
+	
+	.hp-entry {
+	.pad-all(3);
+	.trans-bg(@white; 0.8);
+	.rounded(8px);
+		p {
+		.font-size(2);
+		.line-h(3);	
+		text-align: center;
+		.mag-bot(0);
+		}
+	}
+	
+	
 }
 
 section#hp-about-section {
-	
+.bg-col(@white);
 }

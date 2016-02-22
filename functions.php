@@ -119,8 +119,21 @@ function main_nav() {
 	include (STYLESHEETPATH . '/_/inc/global/main-nav.inc');
 }
 
-function col_strip() {
+function col_strip($pos = null) {
+	
+	if ($pos == "b") {
+	echo '<div class="abs-bot">';
+	}
+	
+	if ($pos == "t") {
+	echo '<div class="abs-top">';
+	}
+	
 	include (STYLESHEETPATH . '/_/inc/global/col-strip.inc');
+	
+	if ($pos == "b" || $pos == "t") {
+	echo '</div>';
+	}
 }
 
 function head_html() {
