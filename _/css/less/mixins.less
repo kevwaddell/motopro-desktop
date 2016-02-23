@@ -53,6 +53,15 @@ letter-spacing: 1px;
 -moz-osx-font-smoothing: subpixel-antialiased;
 }
 
+.font-serif {
+font-family: @serif-font;
+font-weight: normal;
+font-stretch: normal;
+font-style: italic;
+-webkit-font-smoothing: subpixel-antialiased;
+-moz-osx-font-smoothing: subpixel-antialiased;	
+}
+
 .line-h(@sizeValue){
 @pxValue: (@sizeValue * @baseSize);
 line-height: ~"@{pxValue}px"; 
