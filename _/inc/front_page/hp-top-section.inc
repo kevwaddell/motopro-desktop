@@ -9,6 +9,8 @@ $presentation_download = get_field('global_presentation_download', 'options');
 		<source src="<?php echo get_stylesheet_directory_uri(); ?>/_/video/motopro_video_mp4.mp4" type="video/mp4">
 	</video>
 	
+	<div class="video-overlay"></div>
+	
 	<div class="hp-top-intro">
 		
 		<div class="container">

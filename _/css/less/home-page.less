@@ -22,6 +22,18 @@ section#hp-top-section {
     .bg-size;
 	}
 	
+	.video-overlay {
+	.abs;
+	.top(0);
+	.left(0);
+	.bottom(0);
+	.right(0);
+	.trans-bg(@black; 0.5);
+	.bg-repeat(repeat);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAABJJREFUCB1jYGBg+A/ExAHsKgFV7gH/ssPq5wAAAABJRU5ErkJggg==); //Black dots
+	//background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAABBJREFUCB1j+A8EDEQBnCoBYu8H+e1EQUgAAAAASUVORK5CYII=); White dots
+	}
+	
 	.hp-top-intro {
 	.abs;
 	.top(12);
@@ -78,6 +90,7 @@ section#hp-top-section {
 	.pad-all(3);
 	.trans-bg(@white; 0.8);
 	.rounded(8px);
+	.drop-shadow(0, 0, 30px, @alpha: 0.7);
 		h1 {
 		.mag-bot(2);	
 		}
