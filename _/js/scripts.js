@@ -61,4 +61,34 @@ jQuery(document).ready(function( $ ) {
 		return false;
 	});
 	
+	// 	HEADER SEARCH BUTTON
+	
+	$('body').on('click','button#search-btn', function(e){
+	
+		if ( $('#search-pop-up').hasClass('off') ) {
+			
+			$('#search-pop-up').removeClass('off').addClass('on');
+		} 
+		
+		return false;
+		
+	});
+	
+	$('body').on('click','button#close-search', function(e){
+	
+		if ( $('#search-pop-up').hasClass('on') ) {
+			$('#search-pop-up').removeClass('on').addClass('turn-off');
+			
+			$('.turn-off').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+		
+				$(this).removeClass('turn-off').addClass('off');	
+				
+			});
+
+		} 
+		
+		return false;
+		
+	});
+	
 });
