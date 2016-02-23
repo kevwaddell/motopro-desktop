@@ -35,6 +35,9 @@ include (STYLESHEETPATH . '/_/functions/submit_newsletter.php');
 /* YOAST FUNCTIONS */
 include (STYLESHEETPATH . '/_/functions/yoast_functions.php');
 
+/* GRAVITY FORMS FUNCTIONS */
+include (STYLESHEETPATH . '/_/functions/gravity_forms_functions.php');
+
 
 function editor_styles() {
 	add_editor_style(get_stylesheet_directory_uri().'/_/css/custom-editor-style.css');	
@@ -157,5 +160,9 @@ function freephone_no($link = 0){
 function contact_email(){
 	$email = get_field('contact_email', 'options');
 	echo $email;
+}
+
+function show_form($id = 1) {
+	gravity_form($id, false, false, false, null, true);
 }
  ?>

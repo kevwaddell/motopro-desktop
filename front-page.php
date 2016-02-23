@@ -9,4 +9,7 @@
 <!-- LEGAL SERVICES SECTION -->
 <?php inc('legal-services', 'sections'); ?>
 
+<!-- REQUEST A CALLBACK SECTION -->
+<?php inc('request-a-callback', 'sections'); ?>
+
 <?php get_footer(); ?>

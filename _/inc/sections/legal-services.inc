@@ -3,7 +3,7 @@ $section_title = get_field('ls_section_title', 'options');
 $section_bg_img = get_field('ls_section_bg_img', 'options');
 $section_links = get_field('ls_section_links', 'options');
 ?>
-<section id="legal-services-section" class="fw-section with-bg-img" style="background-image: url(<?php echo $section_bg_img; ?>)">
+<section id="legal-services-section" class="section-with-bg-img" style="background-image: url(<?php echo $section_bg_img; ?>)">
 	<div class="overlay-dk"></div>
 	<div class="container">
 		<div class="row">

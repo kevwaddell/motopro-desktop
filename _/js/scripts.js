@@ -1,5 +1,17 @@
 jQuery(document).ready(function( $ ) {
 	
+	var select_picker = $('.selectpicker').find('select');
+	
+	if (select_picker.length > 0) {
+		var placeholder = $(select_picker).find('option.gf_placeholder');
+		$(placeholder).attr('data-hidden', 'true');
+	}
+	
+	$('.selectpicker').find('select').selectpicker({
+		'style': 'btn btn-group btn-default', 
+		'width': '98%'
+	});
+
 	
 	/*
 	MENU FUNCTIONS
