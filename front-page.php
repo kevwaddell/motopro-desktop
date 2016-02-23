@@ -12,4 +12,7 @@
 <!-- CLIENT QUOTE SECTION -->
 <?php inc('client-quote', 'sections'); ?>
 
+<!-- LEGAL FEES SECTION -->
+<?php inc('legal-fees', 'sections'); ?>
+
 <?php get_footer(); ?>

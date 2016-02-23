@@ -14,6 +14,12 @@ background-attachment: fixed;
 	width: 100%;
 	height: 100%;
 	.trans-bg(@black; 0.5);	
+	z-index: 0;
+	}
+	
+	.container {
+	z-index: 1;	
+	.rel;
 	}
 	
 	h3 {
@@ -26,46 +32,9 @@ background-attachment: fixed;
 	.line-h(9);
 	.rounded(8px);
 	}
-	
-	.section-links {
-		
-		i {
-		.abs;
-		.left(1);
-		.top(1);
-		.h(8);
-		.w(8);
-		.border(@white; 0.1);
-		.rounded(100%);
-		.line-h(8);	
-		}
-		
-		a {
-		.block;
-		.h(10);
-		.line-h(10);
-		.mag-bot(2);
-		.no-text-dec;
-		.font-size(4);	
-		.font-slab-bold;
-		letter-spacing: 1px;
-		.col(@white);
-		.trans-bg(@red; 0.8);
-		text-align: center;
-		.rel;
-		
-			&:hover, &:active, &:focus {
-			.trans-bg(@black; 0.8);
-				i {
-				.col(@red);	
-				}
-			}
-		}
-		
-		
-	}
 }
 
+// REQUEST A CALLBACK SECTION
 .section-with-form {
 .pad-top(0);
 .pad-bot(9);
@@ -175,12 +144,54 @@ background-attachment: fixed;
 	
 }
 
+//LEGAL SERVICES SECION
+#legal-services-section {
+	.section-links {
+		
+		i {
+		.abs;
+		.left(1);
+		.top(1);
+		.h(8);
+		.w(8);
+		.border(@white; 0.1);
+		.rounded(100%);
+		.line-h(8);	
+		}
+		
+		a {
+		.block;
+		.h(10);
+		.line-h(10);
+		.mag-bot(2);
+		.no-text-dec;
+		.font-size(4);	
+		.font-slab-bold;
+		letter-spacing: 1px;
+		.col(@white);
+		.trans-bg(@red; 0.8);
+		text-align: center;
+		.rel;
+		
+			&:hover, &:active, &:focus {
+			.trans-bg(@black; 0.8);
+				i {
+				.col(@red);	
+				}
+			}
+		}
+		
+		
+	}
+}
+
 // CLIENT QUOTE SECTION STYLES
 .fw-quote {
 .border-top(@red; 1);
 .bg-col(@white);
 .pad-top(6);
-.pad-bot(9);	
+.pad-bot(9);
+		
 	.quote-text {
 	.font-size(3.5);
 	.line-h(4.5);	
@@ -200,4 +211,60 @@ background-attachment: fixed;
 	text-align: center;	
 	.font-size(2.7);
 	}
+}
+
+#client-quote {
+.rel;	
+	&:after {
+	content: "";
+	.block;
+	.abs;
+	left: 50%;
+	.top(-6);
+	.mag-left(-5);
+	.h(5);
+	.w(10);
+	.bg-img("footer-half-icon.png");	
+	.bg-repeat(no-repeat);
+	background-position: center top;
+	.bg-size;
+	}	
+}
+
+//LEGAL FEES SECTION
+#legal-fees-section {
+	
+	dl.fees-list {
+	.over-hide;
+		dt {
+		.font-slab-reg;
+		.trans-bg(@red; 0.8);
+		.col(@white);	
+		.font-size(2.5);
+		.line-h(5);
+		.pad-left(2);
+		width: 80%;
+		.fleft;
+		.mag-bot(1);
+		}
+		
+		dd {
+		.fright;
+		width: 20%;	
+		text-align: center;
+		.col(@red);
+		.trans-bg(@white; 0.8);
+		.line-h(5);
+		.font-cond;
+		.font-size(3);
+		}
+	}
+	
+	.extra-info {
+	.pad-all(2);
+	text-align: center;
+	.trans-bg(@black; 0.8);	
+	.col(@white);
+	}
+	
 }
