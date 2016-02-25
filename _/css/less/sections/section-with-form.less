@@ -1,0 +1,108 @@
+.section-with-form {
+.pad-top(0);
+.pad-bot(9);
+.border-top(@red; 1);
+.bg-col(@black);
+.rel;
+.inner-shadow(0, 0, 20px, 0.5);
+	
+	h3 {
+	.bg-col(@black);
+	.col(@white);
+	text-align: center;
+	.mag-top(-5);
+	.mag-bot(4);
+	.font-size(3);	
+	.line-h(9);
+	.rounded(8px);
+	}
+	
+	.gform_wrapper {
+	.mag-all(0);	
+	}
+	
+	.gform_wrapper input[type="text"],
+	.gform_wrapper input[type="email"],
+	.gform_wrapper input[type="tel"] {
+	.h(6);	
+	.font-size(2);
+	.font-slab-reg;
+	.pad-all(1);
+	}
+	
+	.dropdown-menu.inner {
+	.font-slab-reg;	
+	}
+	
+	.bootstrap-select.btn-group .dropdown-menu li.selected a {
+	.bg-col(@red);	
+	.col(@white);
+	}
+	
+	.bootstrap-select.btn-group .dropdown-menu li.selected a span.check-mark {
+		.fright;
+		display: inline-block;
+		.col(@white);
+	}
+	
+	.bootstrap-select.btn-group .dropdown-menu li {
+	.mag-bot(1);	
+		&:last-child {
+		.mag-bot(0.5);	
+		}
+	}
+	
+	.gform_wrapper ul.gform_column.left_col {
+	.pad-right(1);	
+	}
+	
+	.gform_wrapper ul.gform_column.right_col {
+	.pad-left(1);	
+	}
+	
+	.gform_wrapper textarea.large {
+		.h(28.7);
+		.pad-all(2);
+		.font-size(2);
+		.font-slab-reg;
+	}
+	
+	.bootstrap-select button {
+	.h(6);	
+	.font-size(2);
+	.pad-all(1);
+	}
+	
+	.gform_wrapper label {
+	.font-size(2);	
+	}
+	
+	.gform_wrapper label, .gform_wrapper .gfield_no_follows_desc {
+	.col(@white);	
+	}
+	
+	.gfield_no_follows_desc {
+	.pad-top(4);
+	.mag-bot(0);	
+	}
+	
+	.gform_wrapper .gsection {
+	.no-border;
+	.pad-all(0);	
+	.mag-all(0);
+	}
+	
+	.gform_wrapper .gform_footer {
+	.mag-top(-6);
+	.pad-all(0);
+	width: 50%;
+	.fright;	
+		input.gform_button {
+		.h(6);
+		.font-size(2);
+		.caps;
+		width: 100%;
+		}
+	}
+	
+}
