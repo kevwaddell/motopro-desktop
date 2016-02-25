@@ -1,0 +1,47 @@
+.feat-img-wide {
+	.h(33);
+	.bg-repeat(no-repeat);
+	background-position: center center;
+	.bg-size(@size: cover);
+	.rel;
+	
+	.img-overlay {
+	.abs;
+	.top(0);
+	.left(0);
+	width: 100%;
+	height: 100%;
+	.trans-bg(@black; 0.5);	
+	.dot-bg;
+	}
+	
+	.star-icon {
+	.abs;
+	.top(0);
+	.right(0);
+	.bg-img("mid-full-icon-white.png");
+	.bg-repeat(no-repeat);
+	background-position: left center;
+	.bg-size(110%);
+	.w(33);
+	.h(33);	
+	.mag-right(-15);
+	}
+	
+	.container {
+	.rel;
+	.h(27);
+	z-index: 2;
+	}
+	
+	h1 {
+	text-align: center;
+	.h(27);
+	.col(@white);	
+	.text-shad;
+	display: table-cell;
+	vertical-align: middle;
+	.font-size(6.5);
+	.line-h(6);
+	}
+}
