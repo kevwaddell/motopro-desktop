@@ -1,0 +1,38 @@
+.section-with-bg-img {
+.pad-top(8);
+.pad-bot(9);
+.bg-repeat(no-repeat);
+.border-top(@red; 1);
+background-position: center center;
+background-attachment: fixed;
+.rel;
+
+	.overlay-dk {
+	.abs;
+	.top(0);
+	.left(0);
+	width: 100%;
+	height: 100%;
+	.trans-bg(@black; 0.5);
+	.bg-repeat(repeat);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAABJJREFUCB1jYGBg+A/ExAHsKgFV7gH/ssPq5wAAAABJRU5ErkJggg==); //Black dots
+	//background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAABBJREFUCB1j+A8EDEQBnCoBYu8H+e1EQUgAAAAASUVORK5CYII=); White dots
+	z-index: 0;
+	}
+	
+	.container {
+	z-index: 1;	
+	.rel;
+	}
+	
+	h3 {
+	.bg-col(@red);
+	.col(@white);
+	text-align: center;
+	.mag-top(-13);
+	.mag-bot(4);
+	.font-size(3);	
+	.line-h(9);
+	.rounded(8px);
+	}
+}
