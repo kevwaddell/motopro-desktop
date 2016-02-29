@@ -12,7 +12,23 @@ jQuery(document).ready(function( $ ) {
 		'width': '98%'
 	});
 	
-
+	
+	/*
+	SCROLLABLE FUNCTIONS
+	initiate the slimscroll function	
+	*/
+	
+	$('.scrollable-inner').slimScroll({
+         position: 'right',
+		 height: 'auto',
+		 size: '20px',
+		 color: '#4b565c',
+		 railOpacity: 1,
+		 railVisible: true,
+		 alwaysVisible: true,
+		 railColor: 'transparent'
+    });
+	
 	/*
 	MENU FUNCTIONS
 	Functions and actions for main navigation

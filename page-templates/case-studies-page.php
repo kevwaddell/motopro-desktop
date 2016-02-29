@@ -56,9 +56,7 @@ if (!empty($pg_sections) ) {
 			</div>
 		</div>
 		
-		<div class="case-studies-list">
-			
-		</div>
+		<?php inc('case-studies', 'sections'); ?>		
 		
 	</article>
 </div>

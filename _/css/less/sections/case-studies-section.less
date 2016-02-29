@@ -1,0 +1,71 @@
+#case-studies {
+.h(44);	
+.rel;
+	.slimScrollRail {
+	.border(@greyDk; 0.1);	
+	border-top-left-radius: 20px !important;
+	border-top-right-radius: 20px !important;
+	border-bottom-right-radius: 20px !important;
+	border-bottom-left-radius: 20px !important;
+	}
+	
+	.slimScrollBar {
+	border-top-left-radius: 20px !important;
+	border-top-right-radius: 20px !important;
+	border-bottom-right-radius: 20px !important;
+	border-bottom-left-radius: 20px !important;
+	.opacity(1) !important;
+	}
+	
+	
+	dl {
+	.pad-right(7);	
+	}
+	
+	dt {
+	.font-size(3);
+	.mag-bot(2);
+	.pad-left(7);
+	.col(@greyDk);
+	.rel;
+		&:before {
+		content: "\f187";
+		font-family: FontAwesome;
+		.abs;
+		.left(0);
+		.top(0);
+		.w(5);
+		.h(5);
+		.border(@grey; 0.1);
+		text-align: center;
+		.col(@red);
+		.font-size(3);
+		.line-h(5);
+		.rounded(100%);
+		.normal;
+		}
+	}
+	
+	dd {
+	.font-size(2);	
+	.line-h(3);
+	.pad-bot(3);
+	.pad-left(7);
+	.mag-bot(3);
+	.border-bot(@grey; 0.1);
+	
+		&:last-child {
+		.pad-bot(0);
+		.mag-bot(0);
+		.no-border;
+		}
+		
+		p {
+		.mag-bot(2);	
+		}
+		
+		p:last-child {
+		.mag-bot(0);	
+		}
+	}
+}
