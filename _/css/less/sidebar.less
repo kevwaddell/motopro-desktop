@@ -1,0 +1,102 @@
+ul.sb-links-red {
+.mag-bot(0);
+.pad-bot(1);
+	li {
+	.mag-bot(1);	
+	}
+	a {
+	.block;
+	.bg-col(@red);
+	.col(@white);
+	.h(7);
+	.line-h(7);
+	.font-size(2.8);
+	.font-slab-reg;
+	.rel;
+	text-align: center;
+	.no-text-dec;
+	.pad-left(5);
+	
+		i {
+		.abs;
+		.top(1);
+		.left(1);
+		.h(5);
+		.w(5);
+		.line-h(5);
+		.border(@white; 0.1);
+		.rounded(100%);	
+		}	
+		
+		&:hover, &:active, &:focus {
+		.bg-col(@black);
+			i {
+			.col(@red);	
+			}
+		}
+	}
+}
+
+ul.sb-jump2-links {
+	
+	li {
+	.mag-bot(0.5);	
+	.font-slab-reg;
+	}
+	
+	li.header {
+	.rel;
+	.h(7);
+	.line-h(7);	
+	.bg-col(@black);
+	.col(@white);
+	.font-size(2.8);
+	text-align: center;
+	.pad-left(5);
+	
+		&:before {
+		content: "\f13d";	
+		font-family: FontAwesome;
+		.abs;
+		.top(1);
+		.left(1);
+		.h(5);
+		.w(5);
+		.line-h(5);
+		.border(@white; 0.1);
+		.rounded(100%);		
+		}
+	}
+	
+	a {
+	.block;
+	.rel;
+	.h(5);
+	.line-h(5);	
+	.bg-col(@grey);
+	.col(@black);
+	text-align: center;
+	.font-size(2);
+	.no-text-dec;
+		&:after {
+		content: "\f103";	
+		font-family: FontAwesome;
+		.abs;
+		.right(0);
+		.top(0);
+		.h(5);	
+		.w(5);
+		.line-h(5);
+		text-align: center;
+		.col(@grey50);
+		}
+		
+		&:hover, &:active, &:focus {
+		.bg-col(@red);
+		.col(@white);
+			&:after {
+			.col(@black);	
+			}
+		}
+	}
+}

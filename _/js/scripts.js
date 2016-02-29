@@ -11,8 +11,8 @@ jQuery(document).ready(function( $ ) {
 		'style': 'btn btn-group btn-default', 
 		'width': '98%'
 	});
-
 	
+
 	/*
 	MENU FUNCTIONS
 	Functions and actions for main navigation
@@ -23,8 +23,6 @@ jQuery(document).ready(function( $ ) {
 		 $('body').addClass('nav-open');
 		 
 		$('#main-nav').animate({top: '0%', opacity: '1'}, 500, "easeInQuart", function(){
-			
-			console.log($(this));
 			
 			$(this).removeClass('nav-closed').addClass('nav-open').removeAttr("style");
 			
@@ -61,6 +59,64 @@ jQuery(document).ready(function( $ ) {
 		return false;
 	});
 	
+	/*
+	MENU SCROLL TO HASH FUNCTIONS
+	If hash is present in url scroll to with animation;
+	*/
+	
+	if(window.location.hash) {
+		
+		var hash = window.location.hash;
+
+		if (hash.indexOf('profile') > 0) {
+			
+			$('html, body').animate({scrollTop: ($('#our-team').offset().top - 80)}, 500);
+			
+			$(hash).find('.next-name a').trigger('click');
+		} else {
+			
+			$('html, body').animate({scrollTop: ($(hash).offset().top - 80)}, 500);
+			
+		}
+	}
+	
+	$(window).on('hashchange', function() {
+		
+		var hash = window.location.hash;
+		var offset = $('#our-team').position();
+		
+		if (hash.indexOf('profile') > 0) {
+			$('html, body').scrollTop( $('#our-team').offset().top - 80 );
+		}
+		
+	});
+	
+	$('body').on('click','#menu-main-menu ul.sub-menu a', function(e){
+		var hash = window.location.hash;
+		var href = $(this).attr('href');
+		var path = href.split('#');
+		var current_url = window.location.pathname;	 
+		
+		if (href.indexOf('#') > 0 && path[0] == current_url) {	
+			
+			if ( $('#main-nav').hasClass('nav-open') ) {
+				
+				$('html, body').animate({scrollTop: ($('#'+path[1]).offset().top - 80)}, 500);
+				
+				$('#close-nav').trigger('click');	
+				
+			} else {
+				
+				$('html, body').animate({scrollTop: ($(hash).offset().top - 80)}, 500);	
+			
+			}
+		
+		return false;	
+		
+		}
+		
+	});
+	
 	// 	HEADER SEARCH BUTTON
 	
 	$('body').on('click','button#search-btn', function(e){
@@ -88,6 +144,37 @@ jQuery(document).ready(function( $ ) {
 		} 
 		
 		return false;
+		
+	});
+	
+	// JUMP TO FUNCTIONS
+	
+	$('body').on('click','ul.sb-jump2-links a', function(e){
+		
+		var id = $(this).attr('href');
+		
+		if ($(id).length > 0) {
+		$('html, body').animate({scrollTop: ($(id).offset().top - 80)}, 500);	
+		}
+		
+		return false;
+		
+	});
+	
+	//OUR TEAM NEXT PRIFILE BUTTON
+	$('body').on('click','.next-name a', function(e){
+		
+		var next_id = $(this).attr('href');
+		var current = $(this).parents('.team-profile');
+		var offset = $(next_id).position().top;
+		var hash = window.location.hash;
+		
+		if (hash.indexOf('#profile') == -1) {
+			
+			$('.team-items-inner').animate({top: "-"+offset+"px"}, 500);
+			return false
+			
+		}
 		
 	});
 	

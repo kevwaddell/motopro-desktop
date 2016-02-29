@@ -1,0 +1,149 @@
+.section-our-team {
+.bg-col(@grey50);	
+.border-top(@red; 1);
+.rel;
+.inner-shadow(0, 0, 20px, 0.5);
+.font-size(2);
+	
+	h3 {
+	.abs;
+	.top(-9);
+	.left(0);
+	width: 100%;
+	.bg-col(@grey50);
+	.col(@black);
+	text-align: center;
+	.mag-bot(0);
+	.font-size(3);	
+	.line-h(9);
+	.rounded(8px);
+	}
+	
+	.team-items {
+	.h(58);
+	.over-hide;
+	.rel;
+	}
+	
+	.team-items-inner {
+	width: 100%;
+	.abs;
+	.top(0);
+	.left(0);	
+	}
+	
+	.team-profile {
+	.h(58);
+	.pad-top(4);
+	.pad-bot(6);
+	//.rel;
+	}
+	
+	.next-name {
+		
+		a {
+			.block;
+			.pad-all(1);
+			.line-h(2);
+			.col(@white);
+			.font-size(1.6);
+			.bg-col(@black);
+			.rounded(8px);
+			.rel;
+			.no-text-dec;
+			
+				&:after {
+				content: "\f007";	
+				font-family: FontAwesome;
+				.abs;
+				.right(0);
+				.top(0);
+				.pad-all(1);
+				.line-h(2);	
+				.col(@red);
+				.normal;
+				.font-size(2);
+				}	
+				
+				&:hover, &:active, &:focus {
+				.bg-col(@red);
+					&:after {
+					.col(@black);	
+					}
+				}
+		}
+			
+	}
+	
+	a.email-link {
+	.bold;
+		&:hover, &:active, &:focus {
+		.col(@black);
+		}	
+	}
+	
+	ul.social-links {
+	.pad-top(1);
+	.mag-bot(2);
+		li {
+		.in-block;
+		.mag-right(1);	
+		}	
+		a {
+		.col(@black);
+		.no-text-dec;
+			i {
+			.font-size(3);	
+			}	
+			
+			&:hover, &:active, &:focus {
+			.col(@red);
+			}
+		}
+	}
+	
+	img.profile-img {
+	.rounded(100%);
+	.border(@white; 1);	
+	.drop-shadow(0, 10px, 15px, 0.75);
+	.mag-bot(2);
+	}
+	
+	.tm-position {
+	.col(@grey);
+	.font-size(3);
+	.line-h(3);
+	.mag-bot(1);
+	}
+	
+	.biog-txt {
+	.line-h(3);	
+		p {
+		.mag-bot(2);	
+		}
+	}
+	
+	.name {
+		.pad-all(1);
+		.line-h(3);
+		.col(@white);
+		.font-size(2);
+		.bg-col(@red);
+		.rounded(8px);
+		.mag-bot(1);
+		.rel;
+		
+		&:after {
+		content: "\f101";	
+		font-family: FontAwesome;
+		.abs;
+		.right(0);
+		.top(0);
+		.pad-all(1);
+		.line-h(3);	
+		.col(@black);
+		.normal;
+		}
+	}
+
+}

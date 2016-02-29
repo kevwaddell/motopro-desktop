@@ -17,6 +17,7 @@ $client_quote = get_field('fb_client_quote', $client_fb[0]->ID);
 
 if ($client_fb) {	
 ?>
+<a name="client-quote"></a>
 <section id="client-quote" class="fw-quote">
 	<div class="container">
 		<div class="row">
