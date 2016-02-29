@@ -1,24 +1,28 @@
 .section-with-form {
-.pad-top(0);
-.pad-bot(9);
 .border-top(@red; 1);
 .bg-col(@black);
 .rel;
 .inner-shadow(0, 0, 20px, 0.5);
 	
 	h3 {
+	.abs;
+	.top(-9);
+	.left(0);
+	width: 100%;
 	.bg-col(@black);
 	.col(@white);
 	text-align: center;
-	.mag-top(-5);
-	.mag-bot(4);
+	.mag-bot(0);
 	.font-size(3);	
 	.line-h(9);
 	.rounded(8px);
 	}
 	
 	.gform_wrapper {
-	.mag-all(0);	
+	.over-hide;
+	.mag-all(0);
+	.pad-top(6);
+	.pad-bot(8);	
 	}
 	
 	.gform_wrapper input[type="text"],

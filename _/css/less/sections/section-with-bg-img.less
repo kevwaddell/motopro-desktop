@@ -1,6 +1,4 @@
 .section-with-bg-img {
-.pad-top(8);
-.pad-bot(9);
 .bg-repeat(no-repeat);
 .border-top(@red; 1);
 background-position: center center;
@@ -25,11 +23,15 @@ background-attachment: fixed;
 	}
 	
 	h3 {
+	.abs;
+	.top(-5);
+	.left(0);
+	width: 100%;
 	.bg-col(@red);
 	.col(@white);
 	text-align: center;
-	.mag-top(-13);
-	.mag-bot(4);
+	.mag-bot(0);
+	.mag-top(0);
 	.font-size(3);	
 	.line-h(9);
 	.rounded(8px);
