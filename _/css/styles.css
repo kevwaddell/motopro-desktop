@@ -4335,6 +4335,9 @@ section#hp-about-section a.btn:focus i {
   padding-top: 60px;
   padding-bottom: 80px;
 }
+.section-with-form .gform_wrapper .gfield_required {
+  color: #ea5777;
+}
 .section-with-form .gform_wrapper input[type="text"],
 .section-with-form .gform_wrapper input[type="email"],
 .section-with-form .gform_wrapper input[type="tel"] {
@@ -4442,6 +4445,7 @@ section#hp-about-section a.btn:focus i {
 #client-feedback-form ul.gfield_radio li label {
   line-height: 20px;
   margin-top: 0px;
+  float: left;
 }
 #client-feedback-form ul.gfield_radio li input {
   height: 20px;
