@@ -106,7 +106,38 @@
 		.font-size(2);
 		.caps;
 		width: 100%;
+			&:hover, &:active, &:focus {
+			.bg-col(@grey);
+			}
 		}
 	}
 	
+}
+
+#client-feedback-form {
+	.gform_wrapper textarea.large {
+		.h(17.4);
+	}
+	
+	.gf_list_inline label {
+	.mag-top(3);	
+	}
+	
+	.ginput_container_radio {
+	.mag-top(0);	
+	}
+	
+	ul.gfield_radio li {
+	.mag-bot(0);
+	.mag-right(2);
+		label {
+		.line-h(2);		
+		.mag-top(0);	
+		}
+	}
+	
+	ul.gfield_radio li input {
+	.h(2);	
+	.mag-top(0);
+	}
 }

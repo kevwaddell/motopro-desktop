@@ -4421,6 +4421,32 @@ section#hp-about-section a.btn:focus i {
   text-transform: uppercase;
   width: 100%;
 }
+.section-with-form .gform_wrapper .gform_footer input.gform_button:hover,
+.section-with-form .gform_wrapper .gform_footer input.gform_button:active,
+.section-with-form .gform_wrapper .gform_footer input.gform_button:focus {
+  background-color: #a1a5a7;
+}
+#client-feedback-form .gform_wrapper textarea.large {
+  height: 174px;
+}
+#client-feedback-form .gf_list_inline label {
+  margin-top: 30px;
+}
+#client-feedback-form .ginput_container_radio {
+  margin-top: 0px;
+}
+#client-feedback-form ul.gfield_radio li {
+  margin-bottom: 0px;
+  margin-right: 20px;
+}
+#client-feedback-form ul.gfield_radio li label {
+  line-height: 20px;
+  margin-top: 0px;
+}
+#client-feedback-form ul.gfield_radio li input {
+  height: 20px;
+  margin-top: 0px;
+}
 #legal-services-section .section-links {
   padding-top: 70px;
   padding-bottom: 70px;
