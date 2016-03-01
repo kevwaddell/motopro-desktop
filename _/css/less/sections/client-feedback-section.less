@@ -1,19 +1,20 @@
-#case-studies {
+#client-feedback {
 .h(44);	
 .rel;
-	
-	dl {
+	ul {
 	.pad-right(7);	
-	}
+	}	
 	
-	dt {
-	.font-size(3);
-	.mag-bot(2);
-	.pad-left(7);
+	li {
+	.font-size(2.5);
+	.line-h(3.5);	
+	.font-serif;
 	.col(@greyDk);
+	.pad-left(7);
+	.mag-bot(6);
 	.rel;
 		&:before {
-		content: "\f187";
+		content: "\f10d";
 		font-family: FontAwesome;
 		.abs;
 		.left(0);
@@ -27,21 +28,7 @@
 		.line-h(5);
 		.rounded(100%);
 		.normal;
-		}
-	}
-	
-	dd {
-	.font-size(2);	
-	.line-h(3);
-	.pad-bot(3);
-	.pad-left(7);
-	.mag-bot(3);
-	.border-bot(@grey; 0.1);
-	
-		&:last-child {
-		.pad-bot(0);
-		.mag-bot(0);
-		.no-border;
+		font-style: normal;
 		}
 		
 		p {
@@ -49,7 +36,7 @@
 		}
 		
 		p:last-child {
-		.mag-bot(0);	
+		.mag-bot(0);		
 		}
 	}
 }
