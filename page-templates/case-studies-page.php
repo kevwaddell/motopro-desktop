@@ -23,14 +23,10 @@ if (!empty($pg_sections) ) {
 		$banner_title_active = true;	
 		}
 		
-		if ($section == "Our Team") {
-		$our_team_active = true;	
-		array_push($jump2menu_items, array('title' => $section, 'id' => sanitize_title($section) ) );
-		}
-		
-		if ($section == "Request a Callback") {
+		if ($section == "Contact Form") {
 		$form_active = true;	
-		array_push($jump2menu_items, array('title' => $section, 'id' => sanitize_title($section) ) );
+		$title = "Request a Callback";
+		array_push($jump2menu_items, array('title' => $title, 'id' => sanitize_title($title) ) );
 		}
 		
 		if ($section == "Client quote") {
@@ -61,10 +57,6 @@ if (!empty($pg_sections) ) {
 	</article>
 </div>
 <!-- Container end  -->
-
-<?php if ($our_team_active) { ?>
-<?php inc('our-team', 'sections'); ?>		
-<?php } ?>
 
 <?php if ($form_active) { ?>
 <?php inc('request-a-callback', 'sections'); ?>		

@@ -29,9 +29,10 @@ if (!empty($pg_sections) ) {
 		array_push($jump2menu_items, array('title' => $section, 'id' => sanitize_title($section) ) );
 		}
 		
-		if ($section == "Request a Callback") {
+		if ($section == "Contact Form") {
 		$form_active = true;	
-		array_push($jump2menu_items, array('title' => $section, 'id' => sanitize_title($section) ) );
+		$title = "Request a Callback";
+		array_push($jump2menu_items, array('title' => $title, 'id' => sanitize_title($title) ) );
 		}
 		
 		if ($section == "Client quote") {

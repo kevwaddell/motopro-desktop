@@ -4497,6 +4497,35 @@ section#hp-about-section a.btn:focus i {
 #legal-services-section .section-links a:focus i {
   color: #ea5777;
 }
+#types-of-motoring-offence .section-links {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+#types-of-motoring-offence .section-links a {
+  display: block;
+  height: 70px;
+  line-height: 70px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: "aleobold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: subpixel-antialiased;
+  letter-spacing: 1px;
+  color: #ffffff;
+  background-color: #ea5777;
+  background-color: rgba(234, 87, 119, 0.8);
+  text-align: center;
+  text-transform: uppercase;
+}
+#types-of-motoring-offence .section-links a:hover,
+#types-of-motoring-offence .section-links a:active,
+#types-of-motoring-offence .section-links a:focus {
+  background-color: #333333;
+  background-color: rgba(51, 51, 51, 0.8);
+}
 .fw-quote {
   border-top: 10px solid #ea5777;
   background-color: #ffffff;

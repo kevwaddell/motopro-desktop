@@ -23,8 +23,10 @@ if (!empty($pg_sections) ) {
 		$banner_title_active = true;	
 		}
 		
-		if ($section == "Request a Callback") {
+		if ($section == "Contact Form") {
 		$form_active = true;	
+		$title = "Request a Callback";
+		array_push($jump2menu_items, array('title' => $title, 'id' => sanitize_title($title) ) );
 		}
 		
 		if ($section == "Legal Services") {
