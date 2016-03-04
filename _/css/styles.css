@@ -4577,11 +4577,11 @@ section#hp-about-section a.btn:focus i {
   -o-background-size: cover;
   background-size: cover;
 }
-#legal-fees-section dl.fees-list {
+#legal-fees dl.fees-list {
   padding-top: 70px;
   overflow: hidden;
 }
-#legal-fees-section dl.fees-list dt {
+#legal-fees dl.fees-list dt {
   font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-stretch: normal;
@@ -4598,7 +4598,7 @@ section#hp-about-section a.btn:focus i {
   float: left;
   margin-bottom: 10px;
 }
-#legal-fees-section dl.fees-list dd {
+#legal-fees dl.fees-list dd {
   float: right;
   width: 20%;
   text-align: center;
@@ -4614,7 +4614,7 @@ section#hp-about-section a.btn:focus i {
   -moz-osx-font-smoothing: subpixel-antialiased;
   font-size: 30px;
 }
-#legal-fees-section .extra-info {
+#legal-fees .extra-info {
   padding: 20px;
   text-align: center;
   background-color: #333333;
