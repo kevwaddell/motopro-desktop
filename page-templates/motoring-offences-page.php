@@ -14,31 +14,22 @@ $banner_title_active =	false;
 $offences_active = false;
 $form_active = false;
 $quote_active = false;
-$jump2menu_items = array();
 
 if (!empty($pg_sections) ) {
 	//echo '<pre class="debug">';print_r($pg_sections);echo '</pre>';
 	
 	foreach ($pg_sections as $section) {
-		if ($section == "Banner title") {
-		$banner_title_active = true;	
-		}
 		
-		if ($section == "Types of Motoring Offence") {
-		$offences_active = true;	
-		array_push($jump2menu_items, array('title' => $section, 'id' => sanitize_title($section) ) );
+		switch ($section) {
+			case "Banner title": $banner_title_active = true;	
+			break;
+			case "Types of Motoring Offence": $offences_active = true;	
+			break;
+			case "Contact Form": $form_active = true;
+			break;
+			case "Client quote": $quote_active = true;
+			break;
 		}
-		
-		if ($section == "Contact Form") {
-		$form_active = true;	
-		$title = "Request a Callback";
-		array_push($jump2menu_items, array('title' => $title, 'id' => sanitize_title($title) ) );
-		}
-		
-		if ($section == "Client quote") {
-		$quote_active = true;	
-		array_push($jump2menu_items, array('title' => $section, 'id' => sanitize_title($section) ) );
-		}	
 		
 	}
 }

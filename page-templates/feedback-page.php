@@ -19,20 +19,15 @@ if (!empty($pg_sections) ) {
 	//echo '<pre class="debug">';print_r($pg_sections);echo '</pre>';
 	
 	foreach ($pg_sections as $section) {
-		if ($section == "Banner title") {
-		$banner_title_active = true;	
+
+		switch ($section) {
+			case "Banner title": $banner_title_active = true;	
+			break;
+			case "Contact Form": $form_active = true;
+			break;
+			case "Legal Services": $legal_services_active = true;;
+			break;
 		}
-		
-		if ($section == "Contact Form") {
-		$form_active = true;	
-		$title = "Request a Callback";
-		array_push($jump2menu_items, array('title' => $title, 'id' => sanitize_title($title) ) );
-		}
-		
-		if ($section == "Legal Services") {
-		$legal_services_active = true;	
-		}
-		
 	}
 }
 ?>

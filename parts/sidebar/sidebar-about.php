@@ -1,7 +1,6 @@
 <?php 
 $pg_sb_items = get_field('pg_sb_items');
 $related_pgs = false;
-$jump2menu = false;
 
 if (!empty($pg_sb_items)) {
 	
@@ -11,7 +10,8 @@ if (!empty($pg_sb_items)) {
 	}
 	
 	if (in_array("Jump to menu", $pg_sb_items)) {
-	global $jump2menu_items;
+	$sb_jump_menu_title = get_field('sb_jump_menu_title');
+	$sb_jump_menu_items = get_field('sb_jump_menu_items');
 	$jump2menu = true;	
 	}
 }
@@ -32,10 +32,16 @@ if (!empty($pg_sb_items)) {
 	
 	<?php if ($jump2menu) { ?>
 		<ul class="list-unstyled sb-jump2-links">
-			<li class="header">Jump to</li>
+			<li class="header"><?php echo $sb_jump_menu_title; ?></li>
 			
-			<?php foreach ($jump2menu_items as $item) { ?>
-			<li><a href="#<?php echo $item['id'] ?>"><?php echo $item['title'] ?></a></li>
+			<?php foreach ($sb_jump_menu_items as $item) { 
+			$item = $item['menu_item'];
+				if ($item === "Contact Form") {
+				$item = "Request a Callback";	
+				}
+			$id = sanitize_title($item);
+			?>
+			<li><a href="#<?php echo $id ?>"><?php echo $item; ?></a></li>
 			<?php } ?>
 			
 		</ul>
