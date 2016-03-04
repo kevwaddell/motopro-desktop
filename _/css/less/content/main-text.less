@@ -1,3 +1,34 @@
+ul.checklist {
+list-style: none;
+.font-size(2);
+.line-h(3);	
+.pad-left(0);
+.mag-bot(0);
+	
+	li {
+	.pad-left(3);
+	.rel;
+	.line-h(3.5);
+	}
+	
+	li:before {
+	.abs;
+	.left(0);
+	font-family: FontAwesome;
+	content: "\f058";
+	.col(@red);
+	.bold;		
+	.mag-right(1);
+	}
+	
+	li.list-header {	
+	.pad-left(0);
+		&:before {
+		.none;	
+		}
+	}
+}
+
 article.page {
 .pad-top(6);
 .pad-bot(9);
@@ -20,7 +51,7 @@ article.page {
 	.font-size(3);
 	.line-h(2.5);
 	}
-	
+
 	.main-text {
 		p {
 		.font-size(2);

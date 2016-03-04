@@ -5025,6 +5025,76 @@ section#hp-about-section a.btn:focus i {
 #legal-procedures .lp-txt p:last-child {
   margin-bottom: 0px;
 }
+#fee-information {
+  position: relative;
+  background-color: #d0d2d2;
+  border-top: 10px solid #ea5777;
+  -webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+#fee-information h3 {
+  position: absolute;
+  top: -90px;
+  left: 0px;
+  width: 100%;
+  background-color: #d0d2d2;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 30px;
+  line-height: 90px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+#fee-information .fee-information-inner {
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+#fee-information .list-header {
+  font-size: 20px;
+}
+#fee-information .extra-fee-info {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #e2e3e4;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+}
+#fee-information .fee-info-price .fee-lable {
+  margin: 0px auto -25px auto;
+  width: 80%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+  background-color: #333333;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  color: #ffffff;
+}
+#fee-information .fee-info-price .price {
+  padding: 40px 0px 20px 0px;
+  border: 1px solid #333333;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+#fee-information .fee-info-price .price span {
+  font-size: 110px;
+  line-height: 80px;
+  color: #ea5777;
+}
+#fee-information .fee-info-price .price small {
+  font-size: 26px;
+  line-height: 26px;
+}
 /** --------------------------- /
 /* Content */
 /* --------------------------- */
@@ -5091,6 +5161,33 @@ section#hp-about-section a.btn:focus i {
   font-size: 20px;
   line-height: 30px;
   color: #d0d2d2;
+}
+ul.checklist {
+  list-style: none;
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+ul.checklist li {
+  padding-left: 30px;
+  position: relative;
+  line-height: 35px;
+}
+ul.checklist li:before {
+  position: absolute;
+  left: 0px;
+  font-family: FontAwesome;
+  content: "\f058";
+  color: #ea5777;
+  font-weight: bold;
+  margin-right: 10px;
+}
+ul.checklist li.list-header {
+  padding-left: 0px;
+}
+ul.checklist li.list-header:before {
+  display: none;
 }
 article.page {
   padding-top: 60px;
