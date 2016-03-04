@@ -2872,6 +2872,9 @@ body {
 .col-grey {
   color: #a1a5a7;
 }
+.col-red {
+  color: #ea5777;
+}
 .caps {
   text-transform: uppercase;
 }
@@ -4943,6 +4946,83 @@ section#hp-about-section a.btn:focus i {
   margin-bottom: 20px;
 }
 #faqs dd p:last-child {
+  margin-bottom: 0px;
+}
+#legal-procedures {
+  position: relative;
+  background-color: #d0d2d2;
+  border-top: 10px solid #ea5777;
+  -webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+#legal-procedures .legal-procedures-inner {
+  height: 590px;
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+#legal-procedures h3 {
+  position: absolute;
+  top: -90px;
+  left: 0px;
+  width: 100%;
+  background-color: #d0d2d2;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 30px;
+  line-height: 90px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+#legal-procedures .legal-procedure-item {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+#legal-procedures .icon i {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #a1a5a7;
+  text-align: center;
+  color: #ea5777;
+  font-size: 30px;
+  line-height: 50px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  font-weight: normal;
+}
+#legal-procedures .title {
+  font-size: 30px;
+  line-height: 28px;
+  margin-bottom: 20px;
+  color: #4b565c;
+  position: relative;
+}
+#legal-procedures .fee {
+  margin-top: 30px;
+  padding: 20px 0px 20px 0px;
+  border-top: 1px solid #a1a5a7;
+  border-bottom: 3px solid #4b565c;
+  font-size: 40px;
+  line-height: 40px;
+  color: #4b565c;
+}
+#legal-procedures .lp-txt {
+  font-size: 20px;
+  line-height: 30px;
+}
+#legal-procedures .lp-txt:last-child {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  border: none;
+}
+#legal-procedures .lp-txt p {
+  margin-bottom: 20px;
+}
+#legal-procedures .lp-txt p:last-child {
   margin-bottom: 0px;
 }
 /** --------------------------- /

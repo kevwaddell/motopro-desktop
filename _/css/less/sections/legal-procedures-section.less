@@ -1,0 +1,81 @@
+#legal-procedures {	
+.rel;
+.bg-col(@grey50);
+.border-top(@red; 1);
+.inner-shadow(0, 0, 20px, 0.5);
+
+	.legal-procedures-inner {
+	.h(59);
+	.pad-top(6);
+	.pad-bot(9);
+	}
+
+	h3 {
+	.abs;
+	.top(-9);
+	.left(0);
+	width: 100%;
+	.bg-col(@grey50);
+	.col(@black);
+	text-align: center;
+	.mag-bot(0);
+	.font-size(3);	
+	.line-h(9);
+	.rounded(8px);
+	}
+	
+	.legal-procedure-item {
+	.pad-bot(3);
+	.mag-bot(3);	
+	}
+	
+	.icon i {
+		.block;
+		.w(5);
+		.h(5);
+		.border(@grey; 0.1);
+		text-align: center;
+		.col(@red);
+		.font-size(3);
+		.line-h(5);
+		.rounded(100%);
+		.normal;
+	}
+	
+	.title {
+	.font-size(3);
+	.line-h(2.8);
+	.mag-bot(2);
+	.col(@greyDk);
+	.rel;
+	}
+	
+	.fee {
+	.mag-top(3);
+	.pad(2;0;2;0);
+	.border-top (@grey; 0.1);
+	.border-bot(@greyDk; 0.3);	
+	.font-size(4);
+	.line-h(4);
+	.col(@greyDk);
+	}
+	
+	.lp-txt {
+	.font-size(2);	
+	.line-h(3);
+	
+		&:last-child {
+		.pad-bot(0);
+		.mag-bot(0);
+		.no-border;
+		}
+		
+		p {
+		.mag-bot(2);	
+		}
+		
+		p:last-child {
+		.mag-bot(0);	
+		}
+	}
+}
