@@ -6,7 +6,7 @@ function my_acf_save_post( $post_id )
 	//echo "<pre>"; print_r($current_screen); echo "</pre>";
 	
 	if ($current_screen->id == 'mp_faq') {
-	wp_update_post( array( 'ID' => $post_id, 'post_title' => 'FAQ -'.$post_id, 'post_name' => 'faq-'.$post_id) );
+	wp_update_post( array( 'ID' => $post_id, 'post_title' => 'FAQ - '.$post_id, 'post_name' => 'faq-'.$post_id) );
 	}
 	
 	if ($current_screen->id == 'mp_feedback_cpt') {

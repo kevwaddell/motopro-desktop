@@ -1,6 +1,28 @@
-#case-studies {
-.h(44);	
+#faqs {	
 .rel;
+.bg-col(@grey50);
+.border-top(@red; 1);
+.inner-shadow(0, 0, 20px, 0.5);
+
+	.faqs-inner {
+	.h(59);
+	.pad-top(6);
+	.pad-bot(9);
+	}
+
+	h3 {
+	.abs;
+	.top(-9);
+	.left(0);
+	width: 100%;
+	.bg-col(@grey50);
+	.col(@black);
+	text-align: center;
+	.mag-bot(0);
+	.font-size(3);	
+	.line-h(9);
+	.rounded(8px);
+	}
 	
 	dl {
 	.pad-right(7);	
@@ -14,7 +36,7 @@
 	.col(@greyDk);
 	.rel;
 		&:before {
-		content: "\f187";
+		content: "\f059";
 		font-family: FontAwesome;
 		.abs;
 		.left(0);
