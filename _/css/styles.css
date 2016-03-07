@@ -5139,6 +5139,7 @@ section#hp-about-section a.btn:focus i {
   background-color: #ffffff;
   position: relative;
   border-top: 10px solid #ea5777;
+  height: 410px;
 }
 #wide-map h3 {
   position: absolute;

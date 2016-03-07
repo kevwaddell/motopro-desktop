@@ -6,12 +6,11 @@ $map_marker = get_stylesheet_directory_uri()."/_/img/map-marker.png";
 ?>
 <?php if ($location) { ?>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-<a name="find-us" id="find-us"></a>
 <section id="wide-map">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-6 col-xs-offset-3">
-				<h3>Find us</h3>
+				<h3>Our Location</h3>
 			</div>
 		</div>
 	</div>
@@ -93,6 +92,7 @@ $map_marker = get_stylesheet_directory_uri()."/_/img/map-marker.png";
 	</div>
 
 </section>
+<a id="find-us" name="find-us"></a>
 
 <div class="modal fade" id="route-finder-modal" tabindex="-1" role="dialog">
 	

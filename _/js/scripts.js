@@ -83,6 +83,8 @@ jQuery(document).ready(function( $ ) {
 	if(window.location.hash) {
 		
 		var hash = window.location.hash;
+		
+		console.log($(hash).offset());
 
 		if (hash.indexOf('profile') > 0) {
 			
