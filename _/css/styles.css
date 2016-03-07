@@ -4392,7 +4392,7 @@ section#hp-about-section a.btn:focus i {
   padding-left: 10px;
 }
 .section-with-form .gform_wrapper textarea.large {
-  height: 287px;
+  height: 173px;
   padding: 20px;
   font-size: 20px;
   font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -4415,7 +4415,7 @@ section#hp-about-section a.btn:focus i {
   color: #ffffff;
 }
 .section-with-form .gfield_no_follows_desc {
-  padding-top: 40px;
+  padding-top: 35px;
   margin-bottom: 0px;
 }
 .section-with-form .gform_wrapper .gsection {
@@ -4423,11 +4423,17 @@ section#hp-about-section a.btn:focus i {
   padding: 0px;
   margin: 0px;
 }
+.section-with-form .gform_wrapper .gform_body:before,
+.section-with-form .gform_wrapper .gform_body:after {
+  content: " ";
+  display: table;
+}
+.section-with-form .gform_wrapper .gform_body:after {
+  clear: both;
+}
 .section-with-form .gform_wrapper .gform_footer {
-  margin-top: -60px;
+  margin-top: 30px;
   padding: 0px;
-  width: 50%;
-  float: right;
 }
 .section-with-form .gform_wrapper .gform_footer input.gform_button {
   height: 60px;
