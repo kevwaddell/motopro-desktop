@@ -1,0 +1,159 @@
+#wide-map {
+.bg-col(white);
+.rel;
+.over-hide;
+.border-top(@red; 1);
+	#wide-map-canvas {
+	.h(40);	
+	width: 100%;
+	}
+	
+	.google-maps {
+	width: 100%;	
+	}
+	
+	.location-box {
+	.mag-top(-33);
+	.trans-bg(@white; 0.8);
+	.drop-shadow(0, 0, 20px, 0.5);
+	
+		address {
+		.pad(2;2;2;8.5);
+		.font-size(2);	
+		.line-h(2.5);
+		.mag-bot(0);
+		.rel;
+			&:before {
+			content: "\f041";
+			font-family: FontAwesome;
+			.abs;
+			.left(2);
+			.top(2);
+			.h(5);
+			.w(5);
+			.border(@grey; 0.1);
+			.rounded(100%);	
+			text-align: center;
+			.line-h(5);	
+			.col(@grey);
+			}
+		}
+		
+		button.btn {
+		.no-rounded;
+		.pad-all(0);
+		.pad-left(8.5);
+		.h(7);
+		.bg-col(@red);
+		.col(@white);
+		.rel;
+		.font-size(2.8);
+		text-align: left;
+		outline: none;
+			i {
+			.abs;
+			.left(2);
+			.top(1);
+			.h(5);
+			.w(5);
+			.border(@white; 0.1);
+			.rounded(100%);	
+			text-align: center;
+			.line-h(5);
+			}	
+			
+			&:hover, &:active, &:focus {
+			.bg-col(@black);
+				i {
+				.col(@red);	
+				}
+			}
+		}
+	}
+	
+}
+
+#route-finder-modal {
+	.modal-header {
+	.bg-col(@red);
+	.rel;
+		h4 {
+		.col(@white);
+		.pad-left(4);	
+		.rel;
+			i {
+			.abs;
+			.left(-0.5);
+			.top(-0.5);
+			.h(3.6);
+			.w(3.6);
+			.line-h(3.6);
+			.rounded(100%);
+			.border(@white; 0.1);
+			text-align: center;
+			}
+		}	
+		
+		button.close-btn {
+		.abs;
+		.pad-all(0);
+		.right(1);
+		.top(1);
+		.h(3.6);
+		.w(3.6);
+		.font-size(2.4);
+		text-align: center;
+		.trans-bg(@black; 0.3);
+		.col(@black);
+		.rounded(100%);	
+		.transition(0.2s);
+			span {
+			.line-h(3.6);
+			.opacity(0.5);	
+			}
+			
+			&:hover, &:active, &:focus {
+			.bg-col(@black);
+			.col(@red);
+				span {
+				.opacity(1);	
+				}
+			}
+		}
+	}
+	
+	.modal-body {
+		
+		.btn {
+		.pad-all(0);
+		.pad-left(2);
+		.h(5);
+		.bg-col(@red);
+		.col(@white);
+		.rel;
+		.font-size(2.4);
+		text-align: left;
+		outline: none;	
+			i {
+			.abs;
+			.right(1);
+			.top(1);
+			.h(3);
+			.w(3);
+			.border(@white; 0.1);
+			.rounded(100%);	
+			text-align: center;
+			.line-h(3);
+			.font-size(1.8);
+			}
+			
+			&:hover, &:active, &:focus {
+			.bg-col(@black);
+				i {
+				.col(@red);	
+				}
+			}
+			
+		}
+	}
+}

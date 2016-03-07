@@ -391,3 +391,15 @@ border-color:  ~"@{borderCol}";
 -moz-border-radius: 0px;
 border-radius: 0px;
 }
+
+// Mixin itself
+.clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

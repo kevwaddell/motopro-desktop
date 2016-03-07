@@ -63,4 +63,60 @@
 			}
 		}
 	}
+	
+	&.contact-links {
+	height: auto;
+	.pad-top(7);
+	.pad-bot(11);
+	.no-border;
+		.container {
+		height: auto;	
+		}
+		
+		h1 {
+		.mag-top(0);	
+		}
+		
+		.intro {
+		.mag-bot(5);
+		}
+		
+		.contact-info {
+			
+			.contact-info-label, a.contact-info-link {
+			.bg-col(@red);
+			.col(@white);
+			text-align: center;	
+			.font-size(2.8);
+			.font-slab-reg;
+			.h(7);
+			.line-h(7);
+			.rel;
+			.mag-bot(2);
+			.pad-left(6);
+				i {
+				.abs;
+				.top(1);
+				.left(1);
+				.w(5);
+				.h(5);
+				.line-h(5);
+				.rounded(100%);
+				.border(@white; 0.1)
+				}
+			}	
+			
+			a.contact-info-link {
+			.block;	
+			.no-text-dec;
+				&:hover, &:active, &:focus {
+				.bg-col(@black);
+					i {
+					.col(@red);	
+					}
+				}
+			}
+			
+		}
+	}
 }
