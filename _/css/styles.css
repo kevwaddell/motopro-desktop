@@ -4434,17 +4434,43 @@ section#hp-about-section a.btn:focus i {
 .section-with-form .gform_wrapper .gform_footer {
   margin-top: 30px;
   padding: 0px;
+  position: relative;
 }
 .section-with-form .gform_wrapper .gform_footer input.gform_button {
   height: 60px;
   font-size: 20px;
   text-transform: uppercase;
   width: 100%;
+  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: subpixel-antialiased;
 }
 .section-with-form .gform_wrapper .gform_footer input.gform_button:hover,
 .section-with-form .gform_wrapper .gform_footer input.gform_button:active,
 .section-with-form .gform_wrapper .gform_footer input.gform_button:focus {
   background-color: #a1a5a7;
+}
+.section-with-form .gform_wrapper .gform_footer:after {
+  font-family: FontAwesome;
+  content: "\f101";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  font-size: 25px;
+  text-align: center;
+}
+.section-with-form .validation_error {
+  text-align: center;
 }
 #client-feedback-form .gform_wrapper textarea.large {
   height: 174px;
@@ -5112,8 +5138,24 @@ section#hp-about-section a.btn:focus i {
 #wide-map {
   background-color: #ffffff;
   position: relative;
-  overflow: hidden;
   border-top: 10px solid #ea5777;
+}
+#wide-map h3 {
+  position: absolute;
+  top: -50px;
+  left: 0px;
+  width: 100%;
+  background-color: #ea5777;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 30px;
+  line-height: 90px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  z-index: 1;
 }
 #wide-map #wide-map-canvas {
   height: 400px;
