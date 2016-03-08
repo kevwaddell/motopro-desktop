@@ -44,6 +44,8 @@ if (!empty($pg_sections) ) {
 		<?php get_sidebar(); ?>
 	
 		<?php inc('post-list-grid', 'blog'); ?>
+		
+		<?php inc('social-feed', 'blog'); ?>
 				
 	</article>
 	
