@@ -77,5 +77,35 @@
 				}
 			}
 		}
+		
+		time.pub-date {
+		.abs;
+		.top(2);
+		.left(0);
+		.bg-col(@red);
+		.pad(1;1.5;1;1.5);
+		text-align: center;
+		.col(@white);
+		.font-size(1.6);
+		.line-h(1.6);
+			span {
+			.block;	
+			}
+			
+			span.month {
+			.caps;	
+			}
+			
+			span.day {
+			.font-size(4);
+			.line-h(3.6);
+			.font-cond;
+			.col(darken(@red, 20%));	
+			}
+			
+			span.year {
+				
+			}
+		}
 	}
 }

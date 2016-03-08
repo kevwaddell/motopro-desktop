@@ -22,6 +22,11 @@
 			<div class="post-img" style="background-image: url(<?php echo $bg_img; ?>)"></div>
 			<h3 class="font-cond caps"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 			<a href="<?php the_permalink(); ?>" class="grad-link" title="<?php the_title_attribute(); ?>"><span class="sr-only">View article</span></a>
+			<time class="pub-date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
+				<span class="month"><?php echo get_the_date('M'); ?></span>
+				<span class="day"><?php echo get_the_date('j'); ?></span>
+				<span class="year"><?php echo get_the_date('Y'); ?></span>
+			</time>
 		</article>
 	</div>
 <?php endwhile; ?>
