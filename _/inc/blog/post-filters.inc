@@ -49,7 +49,7 @@ $newsletter_page = get_page_by_path('join-our-mailing-list');
 		<?php 
 		$archives_args = array(
 			'type'          => 'monthly',
-			'limit'         => '12',
+			'limit'         => '6',
 			'format'        => 'option',
 			'echo'			=> 0
 		);

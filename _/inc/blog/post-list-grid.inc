@@ -1,6 +1,6 @@
 <section class="post-list grid">	
 <?php if ( have_posts() ): ?>
-	
+
 	<div class="page-links pl-top">
 		<?php wp_pagenavi(); ?>
 	</div>
@@ -10,7 +10,11 @@
 	<?php
 	$post_thumbnail = get_post_thumbnail_id();	
 	if ($post_thumbnail) {
-	$img = wp_get_attachment_image_src($post_thumbnail, 'feat-img-wide');
+		if ( $post_counter == 1 || $post_counter == 4 || $post_counter == 5 ) {
+			$img = wp_get_attachment_image_src($post_thumbnail, 'feat-img');
+		} else {
+			$img = wp_get_attachment_image_src($post_thumbnail, 'feat-img-wide');
+		}
 	$bg_img = $img[0];	
 	} else {
 	$bg_img = get_bloginfo('stylesheet_directory'). "/_/css/img/sml-full-icon-white.svg";	
