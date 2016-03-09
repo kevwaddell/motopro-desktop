@@ -1,5 +1,11 @@
 <aside class="blog-sidebar">
 	
-	<?php inc('post-filters', 'blog'); ?>
+	<?php if (!is_single()) { ?>
+		<?php inc('post-filters', 'blog'); ?>			
+	<?php } ?>
+	
+	<?php if (is_single()) { ?>
+		<?php inc('single-post-sidebar', 'blog'); ?>			
+	<?php } ?>
 	
 </aside>

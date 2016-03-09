@@ -179,6 +179,18 @@ jQuery(document).ready(function( $ ) {
 		
 	});
 	
+	$('body').on('click','a.jump-to-link', function(e){
+		
+		var id = $(this).attr('href');
+		
+		if ($(id).length > 0) {
+		$('html, body').animate({scrollTop: ($(id).offset().top - 80)}, 500);	
+		}
+		
+		return false;
+		
+	});
+	
 	//OUR TEAM NEXT PRIFILE BUTTON
 	$('body').on('click','.next-name a', function(e){
 		
@@ -190,9 +202,40 @@ jQuery(document).ready(function( $ ) {
 		if (hash.indexOf('#profile') == -1) {
 			
 			$('.team-items-inner').animate({top: "-"+offset+"px"}, 500);
-			return false
+			return false;
 			
 		}
+		
+	});
+	
+	//POST CONTINUE READING BUTTONS
+	$('body').on('click','button#continue-read-btn', function(e){
+		
+		var inner_h = $('#content-extra-inner').outerHeight();
+			
+		$('button#continue-read-btn').addClass('hidden');
+		
+		$('html, body').animate({scrollTop: ($('#content-extra-inner').offset().top - 20)}, 500);
+		
+		$('#content-extra').animate({height: inner_h+"px"}, 500, function(){
+			$('#content-extra').removeClass('closed').addClass('open').removeAttr('style');
+		});
+
+		return false
+		
+	});
+	
+	$('body').on('click','button#close-content-extra-btn', function(e){
+		
+		$('button#continue-read-btn').removeClass('hidden');
+		
+		$('html, body').animate({scrollTop: ($('h1').offset().top - 200)}, 500);
+			
+		$('#content-extra').animate({height: "0px"}, 500, function(){
+			$('#content-extra').removeClass('open').addClass('closed').removeAttr('style');	
+		});	
+		
+		return false
 		
 	});
 	

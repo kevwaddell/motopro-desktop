@@ -28,7 +28,7 @@ if (!empty($pg_sections) ) {
 ?>
 
 <?php if ( has_post_thumbnail($blog_page) && $banner_title_active ) { ?>
-	<?php inc('blog-featured-img', 'pages'); ?>
+	<?php inc('blog-featured-img', 'blog'); ?>
 <?php } ?>
 
 <!-- Container  -->

@@ -1,12 +1,14 @@
-.post-list {
-	
-}
+#related-posts {
+.pad-bot(9);
 
-.grid {
-	article.type-post {
+	.related-posts-inner {
+	.pad-top(6);
+	}
+
+	article.related-post {
 	.h(30);	
 	.rel;
-	.mag-bot(3);
+	.drop-shadow(0, 0, 10px, 0.75);
 		.post-img {
 		.abs;
 		.left(0);
@@ -19,7 +21,7 @@
 		background-position: center center;
 		}
 		
-		h3 {
+		a.title-link {
 		.abs;
 		.pad(0;2;2;2);
 		.mag-all(0);
@@ -30,13 +32,11 @@
 		.line-h(2.8);
 		text-align: center;
 		z-index: 2;
+		.no-text-dec;
+		.col(@white);
 		
-			a {
-			.no-text-dec;	
-			.col(@white);
-				&:hover, &:active, &:focus {
-				.col(@red);
-				}
+			&:hover, &:active, &:focus {
+			.col(@red);
 			}
 		}
 
