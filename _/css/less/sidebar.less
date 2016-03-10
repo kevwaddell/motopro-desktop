@@ -360,8 +360,10 @@ article.post .blog-sidebar {
 	.rounded(100%);	
 	.mag-bot(3);
 	.rel;
+	
 		img {
 		.rounded(100%);	
+		.block;
 		}
 		
 		&:after {
@@ -378,6 +380,17 @@ article.post .blog-sidebar {
 		background-position: center center;
 		.bg-size(90%);
 		}
+		
+		&:hover, &:active, &:focus {
+			img {
+			.no-rounded;	
+			}
+			
+			&:after {
+			.no-rounded;	
+			}
+		}
+		
 	}
 	
 	.blog-links {

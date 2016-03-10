@@ -1,14 +1,19 @@
-#related-posts {
+#related-posts, #recent-posts {
 .pad-bot(9);
 
-	.related-posts-inner {
+	.related-posts-inner, .recent-posts-inner {
 	.pad-top(6);
 	}
 
-	article.related-post {
+	article.related-post, article.reccent-post {
 	.h(30);	
 	.rel;
 	.drop-shadow(0, 0, 10px, 0.75);
+	.transition(0.2s, ease-in-out);
+	
+		&:hover, &:active, &:focus {
+		.transform(scale(1.1))
+		}
 		.post-img {
 		.abs;
 		.left(0);

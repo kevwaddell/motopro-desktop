@@ -3,10 +3,6 @@ $post_thumbnail = get_post_thumbnail_id();
 $img = wp_get_attachment_image_src($post_thumbnail, 'feat-img');
 $form_activated = get_field('form_activated');
 $articles_active = get_field('ra_active');
-$blog_links = false;	
-if ( $form_activated || $articles_active) {
-$blog_links = true;	
-}
 //echo '<pre class="debug">';print_r($img);echo '</pre>';
 ?>
 <figure class="feat-img-round">
@@ -14,7 +10,6 @@ $blog_links = true;
 	<div class="star-icon"></div>	
 </figure>
 	
-<?php if ($blog_links) { ?>
 <div class="blog-links">
 	<?php if ($form_activated) { ?>
 	<a href="#request-a-callback" class="btn btn-block jump-to-link"><i class="fa fa-phone"></i>Contact us</a>
@@ -22,9 +17,10 @@ $blog_links = true;
 	
 	<?php if ($articles_active) { ?>
 	<a href="#related-posts" class="btn btn-block jump-to-link"><i class="fa fa-chain"></i>Related posts</a>
+	<?php } else { ?>
+	<a href="#recent-posts" class="btn btn-block jump-to-link"><i class="fa fa-chain"></i>Recent posts</a>
 	<?php } ?>
 </div>
-<?php } ?>
 
 <div class="blog-selects">
 	<?php 
