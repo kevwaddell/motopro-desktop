@@ -4,7 +4,7 @@ $blog_home = get_option('page_for_posts');
 $presentation_download = get_field('global_presentation_download', 'options');
 ?>
 <section id="hp-top-section">
-	<video autoplay loop poster="<?php echo get_stylesheet_directory_uri(); ?>/_/css/img/video-poster-img.png" id="bgvid">
+	<video autoplay loop muted poster="<?php echo get_stylesheet_directory_uri(); ?>/_/css/img/video-poster-img.png" id="bgvid">
 		<source src="<?php echo get_stylesheet_directory_uri(); ?>/_/video/motopro_video_webm.webm" type="video/webm">
 		<source src="<?php echo get_stylesheet_directory_uri(); ?>/_/video/motopro_video_mp4.mp4" type="video/mp4">
 	</video>

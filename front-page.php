@@ -6,13 +6,13 @@
 <!-- ABOUT COMPANY SECTION -->
 <?php inc('hp-about-section', 'front_page'); ?>
 
-<!-- LEGAL SERVICES SECTION -->
-<?php inc('legal-services', 'sections'); ?>
+<!-- LEGAL FEES SECTION -->
+<?php inc('legal-fees', 'sections'); ?>
 
 <!-- CLIENT QUOTE SECTION -->
 <?php inc('client-quote', 'sections'); ?>
 
-<!-- LEGAL FEES SECTION -->
-<?php inc('legal-fees', 'sections'); ?>
+<!-- LEGAL SERVICES SECTION -->
+<?php inc('legal-services', 'sections'); ?>
 
 <?php get_footer(); ?>
